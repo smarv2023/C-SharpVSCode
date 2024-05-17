@@ -1,4 +1,5 @@
 ﻿using XMLSerialization;
+using System.Text.Json;
 
     StreetAddress add1 = new StreetAddress { StreetNumber = 324, StreetName = "Fieldstone Bay", City = "Winnipeg" };
     StreetAddress add2 = new StreetAddress { StreetNumber = 562, StreetName = "Kenaston Blvd", City = "Winnipeg" };
@@ -13,7 +14,7 @@
     Person person4 = new Person { FirstName = "Marvin", LastName = "Cholo", Addresses = new List<StreetAddress>() { add3 } };
 
     List<Person> people = new List<Person> { person1, person2, person3, person4 };
-    var js = System.Text.Json.JsonSerializer.Serialize(people);
+    var js = JsonSerializer.Serialize(people);
     // create a file to write to
     string path = @"D:\temp\person.json";
     // Delete the file if it exists.
