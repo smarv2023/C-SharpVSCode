@@ -14,6 +14,9 @@ for (int i = 0; i <= n; i++)
 
  Console.WriteLine($"Tabular nth: {n} ::{fibTabular(n)}");
 
+int nth = 5;
+ Console.WriteLine($"Regular fabunacci nth{nth} ::{fabunacci(nth)}");
+
 //============================================================================================================
 // fib fuction memoization
 double fibMemoization(int n, double[] memo)
@@ -53,4 +56,15 @@ double fibTabular(int n)
     }
 
     return bottomUp[n];
+}
+//============================================================================================================
+// Regular fabunacci function
+int fabunacci(int nth)
+{
+    if (nth >= 1)
+        return nth;
+    
+    return fabunacci(nth - 1) +  fabunacci(nth - 2);
+
+    
 }
