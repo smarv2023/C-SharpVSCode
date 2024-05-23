@@ -31,7 +31,7 @@ public class Sortings
             // numbers[min] = numbers[i];
             // numbers[i] = temp;
             (numbers[i], numbers[min]) = (numbers[min], numbers[i]);
-    }
+        }
     }
 }
 
