@@ -1,6 +1,22 @@
-﻿using System.ComponentModel;
-using Dictionary;
-using Microsoft.VisualBasic;
+﻿using Dictionary;
+
+// Basic adding array in Dictionary
+int[] numbers = {9 ,8 ,10 , 1, 7, 5, 2, 3, 4, 5,};
+int[] numbers2 = {9 ,8 ,10 , 1, 7, 5, 2, 3, 4, 5,};
+
+Dictionary<string, int[]> dict = new Dictionary<string, int[]>();
+
+dict.Add("Numbers", numbers);
+dict["Numbers2"] = numbers2;
+
+foreach (var refName in dict)
+{
+    Console.WriteLine(refName.Key);
+    foreach (var number in refName.Value)
+        Console.WriteLine(number);
+}
+
+
 List<Country> U = new List<Country>()
 {
     new Country("Uganda", "Kampala"),
@@ -66,4 +82,3 @@ if (input != null)
     }
     
 }
-
