@@ -1,6 +1,6 @@
 //Fibonacci O(n)
 
-int n = 1000;
+int n = 100;
 double[] memo = new double[n + 1];
 /* 
 for (int i = 0; i <= n; i++)
