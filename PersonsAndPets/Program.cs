@@ -11,7 +11,7 @@ p2.Pets.Add(new Cat("Rain"));
 // another way of adding to List of pet
 Dog potchoy = new Dog("Potchoy");
 p1.Pets.Add(potchoy);
-potchoy.PetName = "Tirso";
+potchoy.CPetName = "Tirso";
 
 Cat carding = new Cat("Carding");
 p2.Pets.Add(carding);

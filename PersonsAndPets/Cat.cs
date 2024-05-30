@@ -4,7 +4,7 @@ namespace PersonsAndPets;
 
 public class Cat : Pet
 {
-    public Cat(string petName) : base(petName) {}
+    public Cat(string PetName) : base(PetName) {}
     
     public override string MakeNoise()
     {
