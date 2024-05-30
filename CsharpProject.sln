@@ -57,8 +57,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSquare", "StringSquar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTodo", "ApiTodo\ApiTodo.csproj", "{561EE7C5-864E-4570-90D5-92900F85ADB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGameStore", "ApiGameStore\ApiGameStore.csproj", "{505A90EB-D7FB-4552-AE1B-EB93D23A0607}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,10 +167,6 @@ Global
 		{561EE7C5-864E-4570-90D5-92900F85ADB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{561EE7C5-864E-4570-90D5-92900F85ADB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{561EE7C5-864E-4570-90D5-92900F85ADB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{505A90EB-D7FB-4552-AE1B-EB93D23A0607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{505A90EB-D7FB-4552-AE1B-EB93D23A0607}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{505A90EB-D7FB-4552-AE1B-EB93D23A0607}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{505A90EB-D7FB-4552-AE1B-EB93D23A0607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
