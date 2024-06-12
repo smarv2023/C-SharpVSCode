@@ -12,11 +12,12 @@ public class Person(string firstName, string lastName, int age)
         set { age = value; }    
     }
 
-    private List<Pet> _pets = new List<Pet>();
+    //private List<Pet> _pets = new List<Pet>();
     public List<Pet> Pets //{ get; } = new(); //short version
     { 
-        get { return _pets; }
-    }
+        //get { return _pets; }
+        get;
+    } = new();
 
     public override string ToString()
     {

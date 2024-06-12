@@ -1,6 +1,3 @@
-
-using System.Reflection.Metadata.Ecma335;
-
 namespace Person1
 {/* 
     public class Person
