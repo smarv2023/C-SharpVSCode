@@ -10,21 +10,23 @@ for (int i = 0; i <= n; i++)
 }
 */
 
- Console.WriteLine($"Memoization: nth: {n} ::{fibMemoization(n, memo)}");
+Console.WriteLine($"Memoization: nth: {n} ::{FibMemoization(n, memo)}");
 
- Console.WriteLine($"Tabular nth: {n} ::{fibTabular(n)}");
+Console.WriteLine($"Tabular nth: {n} ::{FibTabular(n)}");
+
+Console.WriteLine($"Arithmetic fabunacci nth{n} ::{Afibo(n)}");
 
 int nth = 5;
- Console.WriteLine($"Regular fabunacci nth{nth} ::{fabunacci(nth)}");
+Console.WriteLine($"Regular fabunacci nth{nth} ::{Fabunacci(nth)}");
 
- for (int i = 0; i <= n; i++)
- {
-    Console.WriteLine($"{fibTabular(i)}");
- }
+for (int i = 0; i <= n; i++)
+{
+    Console.WriteLine($"{FibTabular(i)}");
+}
 
 //============================================================================================================
 // fib fuction memoization
-double fibMemoization(int n, double[] memo)
+double FibMemoization(int n, double[] memo)
 {
     if (n <= 1)
     {
@@ -36,14 +38,14 @@ double fibMemoization(int n, double[] memo)
         }
     else
     {
-        memo[n] = fibMemoization(n - 1, memo) + fibMemoization(n - 2, memo);
+        memo[n] = FibMemoization(n - 1, memo) + FibMemoization(n - 2, memo);
         return memo[n];
     }
 }
 
 //============================================================================================================
 // fib function Tabular
-decimal fibTabular(int n)
+decimal FibTabular(int n)
 {
     // Iterization purpose so no error unhandled
     if (n == 0) return 0;
@@ -63,13 +65,31 @@ decimal fibTabular(int n)
     return bottomUp[n];
 }
 //============================================================================================================
+// Arithmetic
+decimal Afibo(int an)
+{
+    if (an <= 1)
+        return an;
+
+    decimal a = 0;
+    decimal b = 1;
+    decimal c = 0;
+
+    for (int i = 2; i <= an; i++)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return c;
+}
+
+//============================================================================================================
 // Regular fabunacci function
-int fabunacci(int nth)
+int Fabunacci(int nth)
 {
     if (nth >= 1)
         return nth;
     
-    return fabunacci(nth - 1) +  fabunacci(nth - 2);
-
-    
+    return Fabunacci(nth - 1) +  Fabunacci(nth - 2);
 }

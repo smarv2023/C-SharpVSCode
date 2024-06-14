@@ -27,7 +27,7 @@ int LinearSearch(int key)
 // Binary Search O(log n)
 Console.WriteLine("Binary Search");
 List<int> listNumbers = new();
-listNumbers = [ 10, 8, 2, 1, 9, 3, 7, 4, 6, 5,]; // 1 - 10
+listNumbers = [ 10, 8, 2, 1, 9, 3, 7, 4, 6, 5 ]; // 1 - 10
 listNumbers.Sort();
 key = 8;
 result = BinarySearch(key);
@@ -42,7 +42,7 @@ else
 int BinarySearch(int key)
 {
     int low = 0;
-    int high = listNumbers.Count -1;
+    int high = listNumbers.Count - 1;
     while (low <= high)
     {
         int mid = low + (high - low) / 2;
